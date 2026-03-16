@@ -1,0 +1,52 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#fff5f5;
+}
+
+header{
+background:#ff4d6d;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#ff8fa3;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.container{
+padding:30px;
+}
+
+footer{
+background:#ff4d6d;
+color:white;
+text-align:center;
+padding:15px;
+position:fixed;
+bottom:0;
+width:100%;
+}
+
+button{
+background:#ff4d6d;
+color:white;
+padding:10px 20px;
+border:none;
+cursor:pointer;
+}
