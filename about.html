@@ -3,12 +3,64 @@
 <head>
 <title>About Us - Dream Cake Shop</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+.about-section{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
+margin-top:30px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+color:#ff4d6d;
+font-size:32px;
+}
+
+.about-text p{
+font-size:18px;
+line-height:1.6;
+}
+
+.about-images{
+flex:1;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.about-images img{
+width:100%;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.banner{
+background:#ffe5ec;
+padding:40px;
+text-align:center;
+}
+
+.banner h1{
+font-size:40px;
+color:#ff4d6d;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>About Dream Cake Shop</h1>
+<h1>Dream Cake Shop</h1>
+<p>Kandivali East, Mumbai</p>
 </header>
 
 <nav>
@@ -19,20 +71,57 @@
 <a href="support.html">Support</a>
 </nav>
 
+<div class="banner">
+<h1>About Dream Cake Shop</h1>
+<p>Sweet Moments Start With Our Cakes</p>
+</div>
+
 <div class="container">
 
-<h2>About Us</h2>
+<div class="about-section">
 
-<p>Dream Cake Shop is located in Kandivali East, Mumbai.</p>
+<div class="about-text">
 
-<p>We make fresh and delicious cakes for birthdays, weddings and special events.</p>
+<h2>Our Story</h2>
 
-<p>Our mission is to make every celebration sweeter.</p>
+<p>
+Dream Cake Shop is a bakery located in Kandivali East, Mumbai. 
+We specialize in making beautiful and delicious cakes for every celebration.
+</p>
+
+<p>
+From birthday cakes to wedding cakes, our team creates fresh cakes using high-quality ingredients and creative designs.
+</p>
+
+<p>
+Our mission is simple — to make every celebration sweeter with our handmade cakes.
+</p>
+
+<p>
+📞 Phone: 9999955555 <br>
+📧 Email: dreamcake@gmail.com
+</p>
+
+</div>
+
+<div class="about-images">
+
+<img src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31">
+
+<img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb">
+
+<img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f">
+
+<img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729">
+
+</div>
+
+</div>
 
 </div>
 
 <footer>
-Dream Cake Shop
+<p>© 2026 Dream Cake Shop | Kandivali East Mumbai</p>
 </footer>
 
 </body>

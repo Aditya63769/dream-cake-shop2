@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Order Cake</title>
+<title>Order Cake - Dream Cake Shop</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+.banner{
+background:#ffe5ec;
+text-align:center;
+padding:40px;
+}
+
+.banner h1{
+color:#ff4d6d;
+font-size:40px;
+}
+
+.cake-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.cake-card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+overflow:hidden;
+text-align:center;
+}
+
+.cake-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.cake-card h3{
+padding:10px;
+color:#ff4d6d;
+}
+
+.order-form{
+margin-top:40px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.order-form input, .order-form select{
+width:100%;
+padding:10px;
+margin-top:8px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.order-form button{
+background:#ff4d6d;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.order-form button:hover{
+background:#e63950;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Order Your Cake</h1>
+<h1>Dream Cake Shop</h1>
+<p>Kandivali East, Mumbai</p>
 </header>
 
 <nav>
@@ -19,23 +93,65 @@
 <a href="support.html">Support</a>
 </nav>
 
+<div class="banner">
+<h1>Order Your Dream Cake 🎂</h1>
+<p>Freshly baked cakes for every celebration</p>
+</div>
+
 <div class="container">
+
+<h2>Our Popular Cakes</h2>
+
+<div class="cake-gallery">
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31">
+<h3>Chocolate Cake</h3>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb">
+<h3>Birthday Cake</h3>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729">
+<h3>Strawberry Cake</h3>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f">
+<h3>Wedding Cake</h3>
+</div>
+
+</div>
+
+<div class="order-form">
 
 <h2>Place Your Order</h2>
 
 <form>
 
-<label>Name:</label><br>
-<input type="text"><br><br>
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required>
 
-<label>Phone:</label><br>
-<input type="text"><br><br>
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required>
 
-<label>Cake Flavor:</label><br>
-<input type="text"><br><br>
+<label>Select Cake Flavor</label>
+<select>
+<option>Chocolate</option>
+<option>Vanilla</option>
+<option>Strawberry</option>
+<option>Black Forest</option>
+<option>Red Velvet</option>
+</select>
 
-<label>Delivery Date:</label><br>
-<input type="date"><br><br>
+<label>Delivery Date</label>
+<input type="date" required>
+
+<label>Special Instructions</label>
+<input type="text" placeholder="Cake message or design request">
 
 <button type="submit">Order Cake</button>
 
@@ -43,8 +159,10 @@
 
 </div>
 
+</div>
+
 <footer>
-Call: 9999955555
+<p>📞 Call: 9999955555 | Dream Cake Shop</p>
 </footer>
 
 </body>
